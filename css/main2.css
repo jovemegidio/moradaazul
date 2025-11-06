@@ -2623,3 +2623,25 @@ p {
     right: 30px;
   }
 }
+
+/* Fix para email overflow em mobile */
+@media (max-width: 768px) {
+  .contact-item .contact-details a {
+    word-break: break-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    display: inline-block;
+  }
+  
+  .contact-item {
+    padding: 15px 20px !important;
+  }
+  
+  .contact-details {
+    flex: 1;
+    min-width: 0;
+    padding-left: 15px;
+  }
+}
